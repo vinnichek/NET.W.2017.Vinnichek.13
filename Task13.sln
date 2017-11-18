@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueRealization.Logic", "QueueRealization.Logic\QueueRealization.Logic.csproj", "{142C1874-496D-4F75-A2E4-9D9F08BA1025}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication", "ConsoleApplication\ConsoleApplication.csproj", "{93F92A27-F5DB-4335-AF05-9A0323B71FA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matrixes.Logic", "Matrixes.Logic\Matrixes.Logic.csproj", "{95385FB2-9426-4709-B638-ADE306D124F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{142C1874-496D-4F75-A2E4-9D9F08BA1025}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{142C1874-496D-4F75-A2E4-9D9F08BA1025}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{142C1874-496D-4F75-A2E4-9D9F08BA1025}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{142C1874-496D-4F75-A2E4-9D9F08BA1025}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93F92A27-F5DB-4335-AF05-9A0323B71FA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93F92A27-F5DB-4335-AF05-9A0323B71FA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93F92A27-F5DB-4335-AF05-9A0323B71FA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93F92A27-F5DB-4335-AF05-9A0323B71FA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95385FB2-9426-4709-B638-ADE306D124F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95385FB2-9426-4709-B638-ADE306D124F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95385FB2-9426-4709-B638-ADE306D124F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95385FB2-9426-4709-B638-ADE306D124F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
