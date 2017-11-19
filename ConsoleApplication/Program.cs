@@ -34,13 +34,13 @@ namespace ConsoleApplication
             queue.Enqueue(6);
             queue.Enqueue(7);
 
-            /*foreach (var i in queue)
+            foreach (var i in queue)
             {
                 Console.WriteLine(i);
             }
             Console.WriteLine(" ");
 
-            Console.WriteLine(queue.Peek());*/
+            Console.WriteLine(queue.Peek());
 
             SquareMatrix<int> a = new SquareMatrix<int>(new int[] {2, 4, 1, 4, 5, 5, 6, 3, 2});
             foreach (var item in a)
@@ -52,20 +52,18 @@ namespace ConsoleApplication
             a.SetValue(2, 2, 78);
 
             Console.WriteLine(a.GetValue(2, 2));
-            /*
+
             DiagonalMatrix<int> a1 = new DiagonalMatrix<int>(new int[] { 2, 4, 1, 4 });
             foreach (var item in a1)
             {
                 Console.WriteLine(item);
             }
 
-            SimmetricMatrix<int> a2 = new SimmetricMatrix<int>(new int[3][] { new int[] {1, 2, 3}, new int[] { 2, 4, 5 }, new int[] { 3,5,6 } });
+            SymmetricMatrix<int> a2 = new SymmetricMatrix<int>(new int[3][] { new int[] {1, 2, 3}, new int[] { 2, 4, 5 }, new int[] { 3,5,6 } });
             foreach (var item in a2)
             {
                 Console.WriteLine(item);
             }
-            */
-
         }
     }
 }

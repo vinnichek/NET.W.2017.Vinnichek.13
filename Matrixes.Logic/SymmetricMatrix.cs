@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Matrixes.Logic
 {
-    public class SimmetricMatrix<T> : Matrix<T>
+    public class SymmetricMatrix<T> : Matrix<T>
     {
         #region Fields and Events
         public event MethodSet OnSetValue;
@@ -15,7 +15,7 @@ namespace Matrixes.Logic
         /// Ctor with parameters.
         /// </summary>
         /// <param name="array">Array of matrix elements.</param>
-        public SimmetricMatrix(T[][] array)
+        public SymmetricMatrix(T[][] array)
         {
             if (array == null)
                 throw new ArgumentNullException($"{nameof(array)} in null");
