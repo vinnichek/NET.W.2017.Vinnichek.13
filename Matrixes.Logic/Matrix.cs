@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Matrixes.Logic
 {
-    public abstract class Matrix<T> : IEnumerable<T> //, IEquatable<Matrix<T>>
+    public abstract class Matrix<T> : IEnumerable<T> 
     {
         #region Fields
         private int size;
