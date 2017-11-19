@@ -1,0 +1,10 @@
+/Users/vinnichek/Projects/Task13/Matrixes.Test/bin/Debug/Matrixes.Test.dll
+/Users/vinnichek/Projects/Task13/Matrixes.Test/bin/Debug/Matrixes.Test.pdb
+/Users/vinnichek/Projects/Task13/Matrixes.Test/bin/Debug/Matrixes.Logic.dll
+/Users/vinnichek/Projects/Task13/Matrixes.Test/bin/Debug/nunit.framework.dll
+/Users/vinnichek/Projects/Task13/Matrixes.Test/bin/Debug/Matrixes.Logic.pdb
+/Users/vinnichek/Projects/Task13/Matrixes.Test/bin/Debug/nunit.framework.xml
+/Users/vinnichek/Projects/Task13/Matrixes.Test/obj/Debug/Matrixes.Test.csprojResolveAssemblyReference.cache
+/Users/vinnichek/Projects/Task13/Matrixes.Test/obj/Debug/Matrixes.Test.csproj.CoreCompileInputs.cache
+/Users/vinnichek/Projects/Task13/Matrixes.Test/obj/Debug/Matrixes.Test.dll
+/Users/vinnichek/Projects/Task13/Matrixes.Test/obj/Debug/Matrixes.Test.pdb

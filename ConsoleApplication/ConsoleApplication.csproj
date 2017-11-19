@@ -42,6 +42,10 @@
       <Project>{95385FB2-9426-4709-B638-ADE306D124F5}</Project>
       <Name>Matrixes.Logic</Name>
     </ProjectReference>
+    <ProjectReference Include="..\BST\BST.csproj">
+      <Project>{C1346374-3341-477E-96A2-D6F58B13E392}</Project>
+      <Name>BST</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

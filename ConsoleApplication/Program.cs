@@ -1,6 +1,8 @@
 ﻿using System;
 using QueueRealization.Logic;
 using Matrixes.Logic;
+using BST;
+
 namespace ConsoleApplication
 {
     class MainClass
@@ -43,13 +45,21 @@ namespace ConsoleApplication
             Console.WriteLine(queue.Peek());
 
             SquareMatrix<int> a = new SquareMatrix<int>(new int[] {2, 4, 1, 4, 5, 5, 6, 3, 2});
+            Console.WriteLine("-------");
+
             foreach (var item in a)
             {
                 Console.WriteLine(item);
             }
             Console.WriteLine("-------");
-            Console.WriteLine(a.GetValue(2, 2));
+            Console.WriteLine(a.GetValue(1, 1));
             a.SetValue(2, 2, 78);
+            Console.WriteLine("-------");
+
+            foreach (var item in a)
+            {
+                Console.WriteLine(item);
+            }
 
             Console.WriteLine(a.GetValue(2, 2));
 
@@ -64,6 +74,15 @@ namespace ConsoleApplication
             {
                 Console.WriteLine(item);
             }
+
+            SquareMatrix<int> b1 = new SquareMatrix<int>(new int[] { 2, 4, 1, 4, 5, 5, 6, 3, 2 });
+            DiagonalMatrix<int> b2 = new DiagonalMatrix<int>(new int[] { 2, 4, 1 });
+            var b = MatrixSum.Sum(b1, b2);
+            foreach (var item in b)
+            {
+                Console.WriteLine(item);
+            }
+
         }
     }
 }

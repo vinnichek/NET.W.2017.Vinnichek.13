@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Matrixes.Logic
 {
-    public abstract class Matrix<T> : IEnumerable<T> //, IEquatable<Matrix<T>>
+    public abstract class Matrix<T> : IEnumerable<T>
     {
         #region Fields
         private int size;
@@ -32,6 +32,25 @@ namespace Matrixes.Logic
         #endregion
 
         #region Public and Protected Methods
+        /// <summary>
+        /// Indexer.
+        /// </summary>
+        /// <param name="i">Row number.</param>
+        /// <param name="j">Column number.</param>
+        public T this[int i, int j]
+        {
+            get
+            {
+                CheckIndexes(i, j);
+                return GetValue(i, j);
+            }
+            set
+            {
+                CheckIndexes(i, j);
+                SetValue(i, j, value);
+            }
+        }
+
         /// <summary>
         /// Get value from i,j position of matrix.
         /// </summary>

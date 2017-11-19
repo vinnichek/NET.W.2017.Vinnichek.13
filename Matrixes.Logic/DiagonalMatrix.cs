@@ -24,6 +24,29 @@ namespace Matrixes.Logic
 
             this.arrayOfDiagonalElements = arrayOfDiagonalElements;
         }
+
+        public DiagonalMatrix(T[][] array)
+        {
+            if (array == null)
+                throw new ArgumentNullException(nameof(array));
+
+            foreach (T[] row in array)
+                if (row.Length != array.Length)
+                    throw new ArgumentException("Input array must be a square array.");
+
+            for (int i = 0; i < array.Length; i++)
+                for (int j = 0; j < array.Length; j++)
+                    if (i != j)
+                        if (!array[i][j].Equals(default(T)))
+                            throw new ArgumentException("The elements outside the main diagonal should have a default value.");
+
+            Size = array.Length;
+
+            arrayOfDiagonalElements = new T[Size];
+
+            for (int i = 0; i < array.Length; i++)
+                arrayOfDiagonalElements[i] = array[i][i];
+        }
         #endregion
 
         #region Override Methods
