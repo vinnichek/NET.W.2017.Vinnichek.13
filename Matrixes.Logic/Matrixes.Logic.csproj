@@ -3,10 +3,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{93F92A27-F5DB-4335-AF05-9A0323B71FA2}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>ConsoleApplication</RootNamespace>
-    <AssemblyName>ConsoleApplication</AssemblyName>
+    <ProjectGuid>{95385FB2-9426-4709-B638-ADE306D124F5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Matrixes.Logic</RootNamespace>
+    <AssemblyName>Matrixes.Logic</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -17,31 +17,25 @@
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <ExternalConsole>true</ExternalConsole>
+    <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <Optimize>true</Optimize>
     <OutputPath>bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <ExternalConsole>true</ExternalConsole>
+    <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Matrix.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\QueueRealization.Logic\QueueRealization.Logic.csproj">
-      <Project>{142C1874-496D-4F75-A2E4-9D9F08BA1025}</Project>
-      <Name>QueueRealization.Logic</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Matrixes.Logic\Matrixes.Logic.csproj">
-      <Project>{95385FB2-9426-4709-B638-ADE306D124F5}</Project>
-      <Name>Matrixes.Logic</Name>
-    </ProjectReference>
+    <Compile Include="SquareMatrix.cs" />
+    <Compile Include="SimmetricMatrix.cs" />
+    <Compile Include="DiagonalMatrix.cs" />
+    <Compile Include="MatrixSum.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
