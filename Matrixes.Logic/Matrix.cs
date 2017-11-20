@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -26,9 +26,9 @@ namespace Matrixes.Logic
         }
 
         /// <summary>
-        /// Change element delegate.
+        /// Change element event.
         /// </summary>
-        public delegate void MethodSet(int i, int j, T value);
+        public event EventHandler<ChangeElementEventArgs> NewElement = delegate { };
         #endregion
 
         #region Public and Protected Methods
@@ -48,7 +48,17 @@ namespace Matrixes.Logic
             {
                 CheckIndexes(i, j);
                 SetValue(i, j, value);
+                OnChangeElement(new ChangeElementEventArgs(GetType().ToString(), i, j));
             }
+        }
+
+        /// <summary>
+        /// Invoke ChangeElement event.
+        /// </summary>
+        /// <param name="args">Arguments of event.</param>
+        protected virtual void OnChangeElement(ChangeElementEventArgs args)
+        {
+            NewElement?.Invoke(this, args);
         }
 
         /// <summary>

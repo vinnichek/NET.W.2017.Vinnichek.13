@@ -39,6 +39,7 @@
     <Compile Include="SymmetricMatrix.cs" />
     <Compile Include="DiagonalMatrix.cs" />
     <Compile Include="MatrixSum.cs" />
+    <Compile Include="ChangeElementEventArgs.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
