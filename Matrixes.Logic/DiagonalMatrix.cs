@@ -7,7 +7,6 @@ namespace Matrixes.Logic
     {
         #region Fields and Events
         private T[] arrayOfDiagonalElements;
-        public event MethodSet OnSetValue;
         #endregion
 
         #region Ctors
@@ -67,8 +66,6 @@ namespace Matrixes.Logic
                 throw new ArgumentNullException($"{nameof(value)} is null.");
 
             arrayOfDiagonalElements[i] = value;
-
-            OnSetValue(i, j, value);
         }
 
         public override IEnumerator<T> GetEnumerator()

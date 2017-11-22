@@ -6,7 +6,6 @@ namespace Matrixes.Logic
     public class SymmetricMatrix<T> : Matrix<T>
     {
         #region Fields and Events
-        public event MethodSet OnSetValue;
         private T[][] triangleArray;
         #endregion
 
@@ -62,8 +61,6 @@ namespace Matrixes.Logic
                 throw new ArgumentException("Can't change non-diagonal element of matrix.");
 
             triangleArray[i][j] = value;
-
-            OnSetValue(i, j, value);
         }
 
         public override IEnumerator<T> GetEnumerator()

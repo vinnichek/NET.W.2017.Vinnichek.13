@@ -4,3 +4,5 @@
 /Users/vinnichek/Projects/Task13/Matrixes.Logic/obj/Debug/Matrixes.Logic.csproj.CoreCompileInputs.cache
 /Users/vinnichek/Projects/Task13/Matrixes.Logic/obj/Debug/Matrixes.Logic.dll
 /Users/vinnichek/Projects/Task13/Matrixes.Logic/obj/Debug/Matrixes.Logic.pdb
+/Users/vinnichek/Projects/Task13/Matrixes.Logic/bin/Debug/Microsoft.Web.XmlTransform.dll
+/Users/vinnichek/Projects/Task13/Matrixes.Logic/bin/Debug/NuGet.Core.dll

@@ -9,7 +9,6 @@ namespace Matrixes.Logic
     {
         #region Fields and Events
         private T[,] innerArray;
-        public event MethodSet OnSetValue;
         #endregion
 
         #region Ctors
@@ -76,7 +75,6 @@ namespace Matrixes.Logic
             CheckIndexes(i, j);
             if (ReferenceEquals(value, null)) throw new ArgumentNullException($"{nameof(value)} is null.");
             innerArray[i, j] = value;
-            OnSetValue?.Invoke(i, j, value);
         }
 
         public override IEnumerator<T> GetEnumerator()
