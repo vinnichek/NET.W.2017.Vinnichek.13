@@ -24,8 +24,8 @@ namespace Matrixes.Logic
                     result[i][j] = (dynamic)lhs[i, j] + rhs[i, j];
                 }
             }
-            
-            return (Matrix<T>)Activator.CreateInstance(matrixType, result);
+
+            return (Matrix<T>)Activator.CreateInstance(matrixType, new object[] { result });
         }
     }
 }

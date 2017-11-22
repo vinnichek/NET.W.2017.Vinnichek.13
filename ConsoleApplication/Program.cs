@@ -1,7 +1,6 @@
 ﻿using System;
 using QueueRealization.Logic;
 using Matrixes.Logic;
-using BST;
 
 namespace ConsoleApplication
 {
@@ -69,7 +68,7 @@ namespace ConsoleApplication
                 Console.WriteLine(item);
             }
 
-            SymmetricMatrix<int> a2 = new SymmetricMatrix<int>(new int[3][] { new int[] {1, 2, 3}, new int[] { 2, 4, 5 }, new int[] { 3,5,6 } });
+            SymmetricMatrix<int> a2 = new SymmetricMatrix<int>(new int[][] { new int[] {1, 2, 3} });
             foreach (var item in a2)
             {
                 Console.WriteLine(item);
@@ -77,12 +76,11 @@ namespace ConsoleApplication
 
             SquareMatrix<int> b1 = new SquareMatrix<int>(new int[] { 2, 4, 1, 4, 5, 5, 6, 3, 2 });
             DiagonalMatrix<int> b2 = new DiagonalMatrix<int>(new int[] { 2, 4, 1 });
-            var b = MatrixSum.Sum(b1, b2);
-            foreach (var item in b)
+            var c = MatrixSum.Sum(b1, b2);
+            foreach (var item in c)
             {
                 Console.WriteLine(item);
             }
-
         }
     }
 }
