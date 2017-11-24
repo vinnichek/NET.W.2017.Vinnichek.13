@@ -149,7 +149,7 @@ namespace QueueRealization.Logic
                 }
             }
 
-            object IEnumerator.Current => throw new NotImplementedException();
+            object IEnumerator.Current => new IteratorQueue(this.queue);
 
             public IteratorQueue(Queue<T> queue)
             {
