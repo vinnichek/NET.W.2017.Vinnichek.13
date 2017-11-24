@@ -17,6 +17,7 @@ namespace QueueRealization.Logic
         private int head;
         private int size;
         private int tail;
+        private int version;
         #endregion
 
         #region Properties
@@ -127,9 +128,9 @@ namespace QueueRealization.Logic
         /// <returns>Object IEnumerator to iterate.</returns>
         public IteratorQueue GetEnumerator() => new IteratorQueue(this);
 
-        IEnumerator<T> IEnumerable<T>.GetEnumerator() => throw new NotImplementedException();
+        IEnumerator<T> IEnumerable<T>.GetEnumerator() => new IteratorQueue(this);
 
-        IEnumerator IEnumerable.GetEnumerator() => throw new NotImplementedException();
+        IEnumerator IEnumerable.GetEnumerator() => new IteratorQueue(this);
         #endregion 
 
         #region struct IteratorQueue
@@ -137,6 +138,7 @@ namespace QueueRealization.Logic
         {
             private Queue<T> queue;
             private int index;
+            private int version;
 
             public T Current
             {
@@ -153,10 +155,13 @@ namespace QueueRealization.Logic
             {
                 this.queue = queue;
                 this.index = queue.head - 1;
+                this.version = queue.version; 
             }
 
             public bool MoveNext()
             {
+                if (version != queue.version) throw new InvalidOperationException();
+
                 if (queue.head <= queue.tail)
                 {
                     return ++index < queue.size + queue.head;

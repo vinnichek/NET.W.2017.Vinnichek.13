@@ -1,5 +1,6 @@
-/Users/vinnichek/Projects/Task13/QueueRealization.Logic/obj/Debug/QueueRealization.Logic.csproj.CoreCompileInputs.cache
 /Users/vinnichek/Projects/Task13/QueueRealization.Logic/bin/Debug/QueueRealization.Logic.dll
 /Users/vinnichek/Projects/Task13/QueueRealization.Logic/bin/Debug/QueueRealization.Logic.pdb
+/Users/vinnichek/Projects/Task13/QueueRealization.Logic/obj/Debug/QueueRealization.Logic.csproj.CoreCompileInputs.cache
 /Users/vinnichek/Projects/Task13/QueueRealization.Logic/obj/Debug/QueueRealization.Logic.dll
 /Users/vinnichek/Projects/Task13/QueueRealization.Logic/obj/Debug/QueueRealization.Logic.pdb
+/Users/vinnichek/Projects/Task13/QueueRealization.Logic/obj/Debug/QueueRealization.Logic.csprojResolveAssemblyReference.cache
