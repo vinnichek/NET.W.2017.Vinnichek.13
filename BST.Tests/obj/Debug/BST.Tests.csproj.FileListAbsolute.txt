@@ -1,0 +1,10 @@
+/Users/vinnichek/Projects/Task13/BST.Tests/bin/Debug/BST.Tests.dll
+/Users/vinnichek/Projects/Task13/BST.Tests/bin/Debug/BST.Tests.pdb
+/Users/vinnichek/Projects/Task13/BST.Tests/bin/Debug/BST.dll
+/Users/vinnichek/Projects/Task13/BST.Tests/bin/Debug/nunit.framework.dll
+/Users/vinnichek/Projects/Task13/BST.Tests/bin/Debug/BST.pdb
+/Users/vinnichek/Projects/Task13/BST.Tests/bin/Debug/nunit.framework.xml
+/Users/vinnichek/Projects/Task13/BST.Tests/obj/Debug/BST.Tests.csprojResolveAssemblyReference.cache
+/Users/vinnichek/Projects/Task13/BST.Tests/obj/Debug/BST.Tests.csproj.CoreCompileInputs.cache
+/Users/vinnichek/Projects/Task13/BST.Tests/obj/Debug/BST.Tests.dll
+/Users/vinnichek/Projects/Task13/BST.Tests/obj/Debug/BST.Tests.pdb

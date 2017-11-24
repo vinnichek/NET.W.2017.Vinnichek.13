@@ -1,0 +1,5 @@
+/Users/vinnichek/Projects/Task13/BST/obj/Debug/BST.csproj.CoreCompileInputs.cache
+/Users/vinnichek/Projects/Task13/BST/bin/Debug/BST.dll
+/Users/vinnichek/Projects/Task13/BST/bin/Debug/BST.pdb
+/Users/vinnichek/Projects/Task13/BST/obj/Debug/BST.dll
+/Users/vinnichek/Projects/Task13/BST/obj/Debug/BST.pdb
