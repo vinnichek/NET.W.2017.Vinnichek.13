@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Matrixes.Logic
 {
-    public class TypeOfMatrix
+    internal class TypeOfMatrix
     {
         public static Type MatrixType<T>(Matrix<T> lhs, Matrix<T> rhs)
         {
