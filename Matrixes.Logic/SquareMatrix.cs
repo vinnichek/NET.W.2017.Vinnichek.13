@@ -76,13 +76,6 @@ namespace Matrixes.Logic
             if (ReferenceEquals(value, null)) throw new ArgumentNullException($"{nameof(value)} is null.");
             innerArray[i, j] = value;
         }
-
-        public override IEnumerator<T> GetEnumerator()
-        {
-            for (int i = 0; i < Size; i++)
-                for (int j = 0; j < Size; j++)
-                    yield return innerArray[i, j];
-        }
         #endregion
     }
 }
