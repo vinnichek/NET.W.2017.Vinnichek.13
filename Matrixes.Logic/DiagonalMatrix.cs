@@ -67,20 +67,6 @@ namespace Matrixes.Logic
 
             arrayOfDiagonalElements[i] = value;
         }
-
-        public override IEnumerator<T> GetEnumerator()
-        {
-            for (int i = 0; i < Size; i++)
-            {
-                for (int j = 0; j < Size; j++)
-                {
-                    if (i != j)
-                        yield return default(T);
-                    else
-                        yield return arrayOfDiagonalElements[i];
-                }
-            }
-        }
         #endregion
     }
 }

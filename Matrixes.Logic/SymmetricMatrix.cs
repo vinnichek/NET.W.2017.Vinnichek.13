@@ -62,20 +62,6 @@ namespace Matrixes.Logic
 
             triangleArray[i][j] = value;
         }
-
-        public override IEnumerator<T> GetEnumerator()
-        {
-            for (int i = 0; i < Size; i++)
-            {
-                for (int j = 0; j < Size; j++)
-                {
-                    if (j > i)
-                        yield return triangleArray[j][i];
-                    else
-                        yield return triangleArray[i][j];
-                }
-            }
-        }
         #endregion
     }
 }

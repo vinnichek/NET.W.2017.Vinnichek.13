@@ -81,7 +81,16 @@ namespace Matrixes.Logic
         /// Return enumerator.
         /// </summary>
         /// <returns>Enumerator which iterates through collection.</returns>
-        public abstract IEnumerator<T> GetEnumerator();
+        public IEnumerator<T> GetEnumerator()
+        {
+            for (int i = 0; i < this.Size; i++)
+            {
+                for (int j = 0; j < this.Size; j++)
+                {
+                    yield return this.GetValue(i, j);
+                }
+            }
+        }
 
         IEnumerator IEnumerable.GetEnumerator() => GetEnumerator(); 
 
